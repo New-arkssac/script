@@ -1,9 +1,9 @@
 import base64
 
 
-def My_base64_encode(jia_mi):  #转码模块
+def My_base64_encode(jia_mi): #转码模块
     jia_mi = jia_mi.encode('utf-8')
-    zhuan_ma = base64.b64encode(jia_mi)  #utf-8转换成base64编码
+    zhuan_ma = base64.b64encode(jia_mi) #utf-8转换成base64编码
     zhuan_ma.decode()
     return zhuan_ma.decode()
 
